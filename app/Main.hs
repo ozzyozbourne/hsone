@@ -1,6 +1,7 @@
 module Main where
 
+import Facto (factorial)
 import HaskellSay (haskellSay)
 
 main :: IO ()
-main = haskellSay "Hello, Haskell!"
+main = haskellSay (show (factorial 5))
