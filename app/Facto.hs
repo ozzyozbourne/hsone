@@ -10,3 +10,9 @@ factorial n = go n 1
     go n acc
       | n <= 1 = acc
       | otherwise = go (n - 1) (n * acc)
+
+checkNumber :: Int -> String
+checkNumber n
+  | n < 0 = "Negative"
+  | n > 0 = "Positive"
+  | otherwise = "Zero"
