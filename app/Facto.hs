@@ -7,9 +7,9 @@ fac n = n * fac (n - 1)
 factorial :: (Integral i) => i -> i
 factorial n = go n 1
   where
-    go n acc
-      | n <= 1 = acc
-      | otherwise = go (n - 1) (n * acc)
+    go b acc
+      | b <= 1 = acc
+      | otherwise = go (b - 1) (b * acc)
 
 checkNumber :: Int -> String
 checkNumber n
